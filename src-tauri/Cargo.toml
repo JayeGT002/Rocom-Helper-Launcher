@@ -1,0 +1,32 @@
+[package]
+name = "rocom-helper-launcher"
+version = "1.0.0"
+description = "Rocom Helper Launcher"
+authors = ["Rocom"]
+edition = "2021"
+
+[lib]
+name = "rocom_helper_launcher_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["blocking", "json", "stream"] }
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3"
+dirs = "5"
+glob = "0.3"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
