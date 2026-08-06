@@ -1,6 +1,6 @@
 # Rocom-Helper-Launcher
 为什么你会需要一个洛克王国世界助手的启动器？  
-用于更新[h3110w0r1d-y/rocom-helper](https://github.com/h3110w0r1d-y/rocom-helper/) ，  遵循h3110w0r1d-y/rocom-helper仓库协议，本项目暂不开源。  
+用于更新[h3110w0r1d-y/rocom-helper](https://github.com/h3110w0r1d-y/rocom-helper/) ，本项目~~暂不开源~~遵循MIT license，虽然也不会有人需要吧，纯属我本地不想塞这玩意的源码罢了。  
 
 ## 能干什么
 1、启动洛克王国世界助手，然后启动游戏。  
@@ -20,3 +20,6 @@
 
 核心 Rust 依赖（`Cargo.toml`）：`tauri 2`、`serde`、`reqwest`、`tokio`、`futures-util`、`dirs`  
 核心前端依赖（`package.json`）：`vue 3.5`、`@tauri-apps/api 2`、`@tauri-apps/plugin-dialog 2`、`@tauri-apps/plugin-shell 2`  
+
+## License
+本项目除美术资源外均遵循MIT license协议开源。    
